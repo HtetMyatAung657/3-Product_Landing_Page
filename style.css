@@ -1,0 +1,161 @@
+body{
+    background-color: white;
+    color: black;
+}
+#header-img{
+    width: 300px;
+    height:  65px;
+    transform: scaleX(-1);
+    padding-left: 501px;
+}
+@media (max-width: 680px){
+    #header-img{
+        width: 150px;
+        padding-left:0px;
+    }
+}
+header{
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 1300px;
+  }
+@media (max-width: 680px){
+    #header{
+        justify-content: flex-start;
+    }
+}
+
+#nav-bar{
+    float: right;
+}
+@media(max-width:680px)   {
+     #nav-bar{
+        flex-wrap: wrap;
+    }
+}
+#nav-bar>a{
+    padding: 20px 50px;
+    color: black;
+    text-decoration: none;
+}
+#top{
+    text-align: center;
+    padding-top: 50px;
+}
+#submit{
+    background-color: yellow;
+    margin-top: 20px;
+    padding: 10px;
+    border: 0px;
+}
+article {
+    text-align: justify;
+    margin: 100px 100px;
+}
+#title{
+    font-family: Tangerine;
+}
+#Features{
+    font-family: Tangerine;
+    font-size: 30px;
+}
+#first{
+    margin-bottom: 80px;
+}
+#second{
+    margin-bottom: 80px;
+}
+#third{
+    margin-bottom: 80px;
+}  
+#utube{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+#container{
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+   justify-content:  center;
+}
+@media(max-width: 680px){
+    #container{
+        flex-direction: column;
+        margin: 0 200px;
+    }
+}
+.box{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    color: black;
+}
+@media (max-width: 680px){
+    .box{
+        margin-bottom: 10px;
+    }
+}
+.box>.head{
+    background-color: #d9d9d9;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.box>#red{
+    color: red;
+}
+.box>#blue{
+    color: blue;
+}
+.box>#black{
+    color: black;
+}
+.box>.select-btn{
+    margin-top: 10px;
+    background-color: yellow;
+    font-size: 20px;
+}
+footer{
+    background-color: #d9d9d9;
+    margin: 50px 180px; 
+    margin-bottom: 0px;
+}
+@media (max-width: 680px){
+    footer{
+        margin-right: 100px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+footer>ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-bottom: 0px;
+}
+footer>ul>li{
+    padding: 0px 20px;
+    padding-top: 20px;
+}
+footer>span{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+    padding-right: 30px;
+}
+.footer-link{
+    color: black;
+    text-decoration: none;
+}
