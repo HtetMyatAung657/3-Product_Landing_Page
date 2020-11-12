@@ -10,7 +10,7 @@ body{
 }
 @media (max-width: 680px){
     #header-img{
-        width: 150px;
+        width: 50px;
         padding-left:0px;
     }
 }
@@ -28,21 +28,25 @@ header{
 @media (max-width: 680px){
     #header{
         justify-content: flex-start;
+        padding: 0;
+        
     }
 }
 
 #nav-bar{
     float: right;
 }
-@media(max-width:680px)   {
-     #nav-bar{
-        flex-wrap: wrap;
-    }
-}
+
 #nav-bar>a{
     padding: 20px 50px;
     color: black;
     text-decoration: none;
+}
+@media(max-width:1080px)   {
+    #nav-bar>a{
+        padding: 0;
+        padding-left: 40px;
+   }
 }
 #top{
     text-align: center;
@@ -103,7 +107,7 @@ article {
 }
 @media (max-width: 680px){
     .box{
-        margin-bottom: 10px;
+        margin-bottom: 40px;
     }
 }
 .box>.head{
@@ -126,6 +130,12 @@ article {
     background-color: yellow;
     font-size: 20px;
 }
+@media (max-width: 1080px){
+    #container{
+        padding: 0 auto;
+        margin: 0 40px;
+    }
+}
 footer{
     background-color: #d9d9d9;
     margin: 50px 180px; 
@@ -133,9 +143,7 @@ footer{
 }
 @media (max-width: 680px){
     footer{
-        margin-right: 100px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin:0px;
     }
 }
 footer>ul{
@@ -148,12 +156,21 @@ footer>ul>li{
     padding: 0px 20px;
     padding-top: 20px;
 }
+@media(max-width: 1080px){
+    footer>ul>li{
+        padding:0 10px;
+    }
+}
 footer>span{
-    display: flex;
-    justify-content: flex-end;
+
     font-size: 0.9em;
     color: #444;
-    padding-right: 30px;
+    padding-left: 750px;
+}
+@media (max-width: 1080px){
+    footer>span{
+        padding-left:180px;
+    }
 }
 .footer-link{
     color: black;
